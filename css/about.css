@@ -1,0 +1,858 @@
+/* About Section */
+.about-section {
+    background: var(--light-gradient);
+    padding: 7rem 0 6rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    scroll-margin-top: 80px; /* Add scroll margin for desktop */
+}
+
+/* Remove the wave overlay completely */
+.about-overlay {
+    display: none;
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Section Header Styles */
+.about-section .section-header {
+    padding: 0 2rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-section .section-tag {
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(26, 95, 122, 0.1) 0%, rgba(87, 197, 182, 0.1) 100%);
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.about-section h2 {
+    color: var(--primary-blue);
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-top: 2rem; /* Increased top margin for proper spacing */
+    padding-top: 1rem; /* Add padding for extra spacing */
+}
+
+.about-section .subtitle {
+    color: var(--neutral-dark);
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.about-section .section-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--primary-gradient);
+    margin: 1.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* About Cards Container */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+/* Content Card Styles */
+.about-content {
+    width: 48%;
+    min-height: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    opacity: 1.0;
+}
+
+.about-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-card-header {
+    padding: 2rem 2.5rem 1.5rem;
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(248,252,255,1) 100%);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+
+.about-card-body {
+    padding: 2.5rem;
+}
+
+/* Left content styles */
+.about-left {
+    text-align: left;
+}
+
+.about-left .about-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-left .about-icon {
+    margin-right: 1.5rem;
+}
+
+.about-left h3::after {
+    left: 0;
+}
+
+/* Right content styles */
+.about-right {
+    text-align: left;
+}
+
+/* For vision card, align header elements to the left exactly like the about card */
+.about-right .about-card-header {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+.about-right h3::after {
+    left: 0;
+    right: auto;
+}
+
+.about-right .about-icon {
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+
+.about-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(26, 95, 122, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.about-icon i {
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Enhanced Icon Styling for Perfect Alignment */
+.about-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(26, 95, 122, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.about-icon i {
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Perfect Header Alignment */
+.about-card-header {
+    padding: 2rem 2.5rem 1.5rem;
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(248,252,255,1) 100%);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Responsive styles for About Section */
+@media (max-width: 1200px) {
+    .about-section {
+        padding: 5rem 0 0;
+    }
+    
+    .about-section .section-header {
+        padding: 0 2rem 2.5rem;
+    }
+    
+    .about-section h2 {
+        font-size: 2.3rem;
+    }
+    
+    .about-left {
+        margin-right: 18rem;
+    }
+    
+    .about-right {
+        margin-left: 18rem;
+    }
+    
+    .about-content {
+        padding: 1.6rem 2.5rem;
+        min-height: 260px;
+    }
+    
+    .about-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-section {
+        padding: 4rem 0 0;
+    }
+    
+    .about-section .section-header {
+        padding: 0 2rem 2rem;
+    }
+    
+    .about-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-block {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .about-left {
+        margin-right: 12rem;
+    }
+    
+    .about-right {
+        margin-left: 12rem;
+    }
+    
+    .about-content {
+        padding: 1.5rem 2rem;
+        min-height: 240px;
+    }
+    
+    .about-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .about-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .about-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .about-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsive Media Queries for About Section */
+@media (max-width: 1200px) {
+    .about-section {
+        padding: 5rem 0 4rem;
+    }
+    
+    .about-section .container {
+        max-width: 95%;
+    }
+    
+    .about-content {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-container {
+        gap: 1.5rem;
+    }
+    
+    .about-card-header {
+        padding: 1.8rem 2rem;
+    }
+    
+    .about-card-body {
+        padding: 2rem;
+    }
+    
+    .about-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .about-icon i {
+        font-size: 1.7rem;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 5rem 0 2.5rem; /* Increased top padding for mobile */
+        scroll-margin-top: 80px;
+    }
+    
+    .about-section .container {
+        padding: 0 1rem;
+    }
+    
+    .about-section h2 {
+        margin-top: 2rem; /* Increased spacing from navbar */
+        padding-top: 1rem; /* Additional padding for mobile */
+    }
+    
+    .about-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .about-content {
+        width: 100%;
+        min-height: auto;
+    }
+    
+    /* Perfect Mobile Icon Alignment */
+    .about-card-header {
+        padding: 1.5rem 1.5rem 1rem;
+        flex-direction: row !important;
+        text-align: left !important;
+        gap: 1rem;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        display: flex !important;
+    }
+    
+    .about-card-body {
+        padding: 1rem 1.5rem 1.5rem;
+        text-align: left !important;
+    }
+    
+    /* Mobile Icon Perfect Positioning */
+    .about-icon {
+        width: 56px;
+        height: 56px;
+        margin: 0 !important;
+        flex-shrink: 0;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-icon i {
+        font-size: 1.6rem;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* Mobile Text Perfect Alignment */
+    .about-content h3 {
+        font-size: 1.4rem;
+        margin: 0 !important;
+        text-align: left !important;
+        flex: 1;
+        display: flex !important;
+        align-items: center !important;
+        line-height: 1.3 !important;
+    }
+    
+    .about-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 5rem 0 2rem; /* Increased top padding */
+        scroll-margin-top: 90px;
+    }
+    
+    .about-section .section-header {
+        padding: 0 1rem 2rem;
+    }
+    
+    .about-section h2 {
+        margin-top: 2rem; /* More spacing on small mobile */
+        padding-top: 1rem; /* Additional padding */
+    }
+    
+    /* Small Mobile Perfect Alignment */
+    .about-card-header {
+        padding: 1.2rem 1.2rem 0.8rem;
+        gap: 0.8rem;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        display: flex !important;
+    }
+    
+    .about-card-body {
+        padding: 0.8rem 1.2rem 1.2rem;
+        text-align: left !important;
+    }
+    
+    .about-icon {
+        width: 48px;
+        height: 48px;
+        margin: 0 !important;
+        flex-shrink: 0;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-icon i {
+        font-size: 1.4rem;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-content h3 {
+        font-size: 1.3rem;
+        line-height: 1.3 !important;
+        margin: 0 !important;
+        text-align: left !important;
+        flex: 1;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .about-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0.8rem;
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 5rem 0 1.5rem; /* Increased top padding */
+        scroll-margin-top: 90px;
+    }
+    
+    .about-section h2 {
+        margin-top: 2rem; /* Consistent spacing */
+        padding-top: 1rem; /* Additional padding */
+    }
+    
+    /* Ultra Small Mobile Perfect Alignment */
+    .about-card-header {
+        padding: 1rem 1rem 0.6rem;
+        gap: 0.7rem;
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+        display: flex !important;
+    }
+    
+    .about-card-body {
+        padding: 0.6rem 1rem 1rem;
+        text-align: left !important;
+    }
+    
+    .about-icon {
+        width: 44px;
+        height: 44px;
+        margin: 0 !important;
+        flex-shrink: 0;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-icon i {
+        font-size: 1.3rem;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-content h3 {
+        font-size: 1.2rem;
+        text-align: left !important;
+        margin: 0 !important;
+        flex: 1;
+        display: flex !important;
+        align-items: center !important;
+        line-height: 1.3 !important;
+    }
+    
+    .about-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-section {
+        padding: 5rem 0 1.2rem; /* Increased top padding */
+        scroll-margin-top: 90px;
+    }
+    
+    .about-section h2 {
+        margin-top: 2rem; /* Consistent spacing */
+        padding-top: 1rem; /* Additional padding */
+    }
+    
+    /* Smallest Mobile Perfect Alignment */
+    .about-card-header {
+        padding: 0.8rem 0.8rem 0.5rem;
+        gap: 0.6rem;
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+        display: flex !important;
+    }
+    
+    .about-card-body {
+        padding: 0.5rem 0.8rem 0.8rem;
+        text-align: left !important;
+    }
+    
+    .about-icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 !important;
+        flex-shrink: 0;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-icon i {
+        font-size: 1.2rem;
+        line-height: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .about-content h3 {
+        font-size: 1.1rem;
+        line-height: 1.3 !important;
+        text-align: left !important;
+        margin: 0 !important;
+        flex: 1;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .about-content p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-bottom: 0.6rem;
+        text-align: left !important;
+    }
+}
+
+/* Additional fixes for perfect centering */
+@media (max-width: 320px) {
+    .about-card-header {
+        padding: 0.6rem 0.6rem 0.4rem;
+        gap: 0.5rem;
+    }
+    
+    .about-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .about-icon i {
+        font-size: 1.1rem;
+    }
+    
+    .about-content h3 {
+        font-size: 1rem;
+    }
+    
+    .about-content p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Specific fix for the screen size shown in screenshot (around 1024px-1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .about-section .container {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+    
+    /* Force side-by-side layout */
+    .about-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: stretch !important;
+        gap: 2rem !important;
+        margin-bottom: 4rem;
+        width: 100% !important;
+    }
+    
+    /* Equal width cards */
+    .about-content {
+        width: calc(50% - 1rem) !important;
+        min-height: 380px;
+        flex: 1 !important;
+        max-width: calc(50% - 1rem) !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    /* Remove any margin overrides */
+    .about-left {
+        margin: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .about-right {
+        margin: 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    /* Ensure proper card structure */
+    .about-card-header {
+        padding: 2rem 2.5rem 1.5rem;
+        gap: 1.5rem;
+        flex-shrink: 0;
+    }
+    
+    .about-card-body {
+        padding: 1.5rem 2.5rem 2.5rem;
+        flex: 1;
+    }
+    
+    .about-icon {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .about-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .about-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* Override any conflicting styles for this specific range */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    /* Remove any grid or block display */
+    .about-container {
+        grid-template-columns: none !important;
+        display: flex !important;
+    }
+    
+    /* Ensure no width restrictions */
+    .about-content {
+        min-width: auto !important;
+        max-width: calc(50% - 1rem) !important;
+    }
+    
+    /* Remove any positioning conflicts */
+    .about-left,
+    .about-right {
+        position: static !important;
+        float: none !important;
+    }
+}
+
+/* Specific fix for the screen size shown in screenshot (around 1440px viewport) */
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .about-section .container {
+        max-width: 1300px;
+        padding: 0 2rem;
+    }
+    
+    /* Force horizontal layout for this specific screen size */
+    .about-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: stretch !important;
+        gap: 2.5rem !important;
+        margin-bottom: 4rem;
+        width: 100% !important;
+    }
+    
+    /* Equal width cards with proper sizing */
+    .about-content {
+        width: calc(50% - 1.25rem) !important;
+        min-height: 400px;
+        flex: 1 !important;
+        max-width: calc(50% - 1.25rem) !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    /* Override any conflicting margin styles */
+    .about-left {
+        margin: 0 !important;
+        margin-right: 0 !important;
+        width: calc(50% - 1.25rem) !important;
+    }
+    
+    .about-right {
+        margin: 0 !important;
+        margin-left: 0 !important;
+        width: calc(50% - 1.25rem) !important;
+    }
+    
+    /* Ensure proper card structure and spacing */
+    .about-card-header {
+        padding: 2.2rem 2.8rem 1.8rem;
+        gap: 1.5rem;
+        flex-shrink: 0;
+    }
+    
+    .about-card-body {
+        padding: 1.8rem 2.8rem 2.8rem;
+        flex: 1;
+    }
+    
+    /* Icon and text sizing for this viewport */
+    .about-icon {
+        width: 68px;
+        height: 68px;
+    }
+    
+    .about-icon i {
+        font-size: 1.9rem;
+    }
+    
+    .about-content h3 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+    
+    .about-content p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 1.3rem;
+    }
+}
+
+/* Override any grid or block display conflicts */
+@media (min-width: 1200px) and (max-width: 1600px) {
+    /* Force flexbox and remove any conflicting styles */
+    .about-container {
+        grid-template-columns: none !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    /* Remove any positioning that might cause stacking */
+    .about-left,
+    .about-right {
+        position: static !important;
+        float: none !important;
+        clear: none !important;
+    }
+    
+    /* Ensure cards don't break to new line */
+    .about-content {
+        min-width: auto !important;
+        max-width: calc(50% - 1.25rem) !important;
+        flex-basis: calc(50% - 1.25rem) !important;
+    }
+}

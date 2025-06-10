@@ -1,0 +1,215 @@
+/******************************
+ * 🏠 Hero Section Styles
+ ******************************/
+
+.hero {
+    padding: 10rem 2rem 6rem;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--neutral-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Background Shapes */
+.hero-bg-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape-1 {
+    top: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: var(--accent-gradient);
+    opacity: 0.5;
+    animation: float 15s ease-in-out infinite alternate;
+}
+
+.shape-2 {
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-gradient);
+    opacity: 0.3;
+    animation: float 20s ease-in-out infinite alternate-reverse;
+}
+
+.shape-3 {
+    top: 30%;
+    left: 30%;
+    width: 200px;
+    height: 200px;
+    background: var(--primary-gradient);
+    opacity: 0.2;
+    animation: float 10s ease-in-out infinite;
+}
+
+.shape-4 {
+    top: 20%;
+    right: 20%;
+    width: 150px;
+    height: 150px;
+    background: var(--light-gradient);
+    opacity: 0.3;
+    animation: float 12s ease-in-out infinite alternate;
+}
+
+.shape-5 {
+    bottom: 20%;
+    right: 20%;
+    width: 180px;
+    height: 180px;
+    background: var(--primary-gradient);
+    opacity: 0.15;
+    animation: float 18s ease-in-out infinite alternate-reverse;
+}
+
+/* Hero Container */
+.hero-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    animation: fadeIn 1s ease-out;
+    max-width: 50%;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--neutral-dark);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    color: var(--secondary-blue);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--neutral-dark);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.8;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 50%;
+}
+
+.image-container {
+    position: relative;
+    z-index: 1;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition-normal);
+}
+
+.image-container:hover {
+    transform: translateY(-10px) rotate(1deg);
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 95, 122, 0.2), rgba(87, 197, 182, 0.2));
+    z-index: 2;
+    mix-blend-mode: multiply;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.01);
+}
+
+/* Floating Cards */
+.floating-card {
+    position: absolute;
+    background: linear-gradient(135deg, #ffffff, #f9fafb);
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    border: 1px solid rgba(229, 231, 235, 0.7);
+    opacity: 1;
+}
+
+.floating-card i {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+}
+
+.floating-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+.card-1 {
+    top: 5%;
+    left: -10%;
+}
+
+.card-2 {
+    bottom: 15%;
+    right: -6%;
+}
+
+.card-3 {
+    top: 60%;
+    left: 5%;
+}

@@ -1,0 +1,21 @@
+/******************************
+ * OpenPaymnt CSS Architecture
+ ******************************/
+
+/* Base Styles & Variables */
+@import 'css/base.css';
+
+/* Layout Components */
+@import 'css/header.css';
+@import 'css/hero.css';
+@import 'css/features.css';
+@import 'css/about.css';
+@import 'css/team.css';
+@import 'css/cta.css';
+@import 'css/footer.css';
+
+/* Animations */
+@import 'css/animations.css';
+
+/* Responsive Styles */
+@import 'css/responsive.css';
